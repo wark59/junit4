@@ -11,3 +11,6 @@ MaxCore.max
 out
 java.hprof.txt
 .DS_Store
+.classpath
+.project
+.settings/org.eclipse.jdt.core.prefs

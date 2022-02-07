@@ -27,7 +27,8 @@
         javac -cp .;junit-4.<version>.jar;hamcrest-core-1.3.jar <nomDeClasseTest>.java (pour window)
         ```
     * Directement avec un IDE tel que Eclipse ou IntelliJ par le bouton prévu à cet effet.
-    {Mettre une photo de JUNIT de eclipse}terminal
+    ![img1](img/img1.png)
+    
     * Par maven (projet préalablement sous maven)
         * mvn clean (si projet déjà compilé)
         * mvn install

@@ -55,5 +55,26 @@
 ## Analyse du git 
 
 L'équipe est composées de 4 développeurs et le dépôt de plus de 150 contributeurs.
+Tout les collaborateurs n'ont pas une fréquence régulière ni dans les commits ou dans le temps, certain contributeurs ont produit des commits durant 2jours et on disparu ensuite. En revanche les 4 développeurs identifiés dans le pom.xml 3 d'entre eux ont eu une contribution régulière et équitable tout au long du projet.
 
-On constate que le dépôt git a été créé le 03 decembre 2001, mais les commits conséquents n'ont été réalisés qu'en mars 2006.
+![img2](img/img2.png)
+
+On constate que le dépôt git a été créé le 03 decembre 2001, mais les commits conséquents n'ont été réalisés qu'en mars 2006. 
+Pour ce qui est de l'activité sur le projet le dernier commit est actuellement en décembre 2021 mais nous pouvons remarquer Aucune issues ni de merge request est en attente. De plus la dernière releaseNote date de 2020 on en déduit que le projet n'est plus d'actualité.
+
+![img3](img/img3.png)
+
+Sur le graphique récupéré sur le projet github nous remarquons que la contribution a été faite sur certaines périodes. 
+Nous retrouvons 4 branches sur le projet nommées respectivement : 
+- main (pour la branche principal)
+- gh-pages 
+- immutable-description
+- fixtures
+La branche fixtures n'a pas eu d'activité depuis 6ans on en déduit qu'elle à dû être abandonner lors de la réalisation du projet même si elle contient 436 commits.
+Immutable-description suis le même schéma que celle de fixture avec comme dernière mise à jour il y a 3ans. 
+Les deux n'ont pas passé la pipeline.
+Seul la branch gh-pages a eu une mise à jour récente avec la pipeline au vert.
+
+### Pull request 
+
+Les pull requests ont été utilisé dans le projet. 18 restent encore ouverts. On y retrouve des fix de bug, des features, du refactoring.

@@ -78,3 +78,28 @@ Seul la branch gh-pages a eu une mise à jour récente avec la pipeline au vert.
 ### Pull request 
 
 Les pull requests ont été utilisé dans le projet. 18 restent encore ouverts. On y retrouve des fix de bug, des features, du refactoring.
+
+# 4 Architecture logicielle
+## 4.1 Utilisation de bibliothèques extérieures.
+
+- Le projet implémente la librairie JAVA ainsi que d'autre tel que Hamcrest-core-1.3 & Hamcrest-library qu'on retrouve cité dans le pom.xml, dans les dépendances maven.
+
+![img4](img/img4.png)
+
+- Toute les dépendances sont utilisés :
+    - hamcrest permettant d'écrire déclarativement les règles de correspondance
+    - JAVA qui est composé de JUNIT
+    
+- Nous n'avons pas de dépendance duppliquée vu le nombre. Hamcrest sert à déclarer des règles de correspondance.
+
+## 4.2 Organisation en paquetages.
+
+- Dans les différents dossier sources nous avons : 
+    - 32 paquetages dans le src/main/java
+    - 44 paquetages dans le src/test/java
+    - **76 paquetages au total**
+
+- Il y a dans le dossier src/main/java 2 catégories de paquatages : 
+    - Junit
+    - org/Junit
+- Il ne s'appelle qu'entre eux. Le paquetage runner et extensions communique uniquement avec le paquetage framework.

@@ -52,7 +52,7 @@
 
 # 2. Historique du logiciel
 
-## Analyse du git 
+# 3 Analyse du git 
 
 L'équipe est composées de 4 développeurs et le dépôt de plus de 150 contributeurs.
 Tout les collaborateurs n'ont pas une fréquence régulière ni dans les commits ou dans le temps, certain contributeurs ont produit des commits durant 2jours et on disparu ensuite. En revanche les 4 développeurs identifiés dans le pom.xml 3 d'entre eux ont eu une contribution régulière et équitable tout au long du projet.
@@ -103,3 +103,45 @@ Les pull requests ont été utilisé dans le projet. 18 restent encore ouverts. 
     - Junit
     - org/Junit
 - Il ne s'appelle qu'entre eux. Le paquetage runner et extensions communique uniquement avec le paquetage framework.
+
+## 4.3 Répartition des classes dans les paquetages.
+
+- Au minium par paquetage nous retrouvons une classe, au maximum 81 classe et en moyenne une 12ène de classe par paquetage.
+
+- Au total dans le projet nous trouvons 274 classes.
+
+- Toutes les classes ne sont pas dans le même paquetage. Nous avons des paquetages contennant 81 classes, certaines sont dispatcher dans d'autres sous-paquetages.
+
+- Certains paquetages contiennent des classes ainsi que des sous-paquetages. 
+
+- Après une étude sur le paquetage validator, nous remarquons que toute les classes interdépendent du paquetage runner pour s'exécuter convenablement. On obtient donc une certaine cohérence sur les imports de nos classes.
+
+-- METRICS ECLIPSE
+S’il y a plusieurs hiérarchies parallèles, les paquetages qui ont le plus de classes dans une hiérarchie ont-ils aussi le plus de classes
+dans les autres ?
+• analyser le couplage et la cohésion au sein des paquetages de quelques uns en particulier
+METRICS ECLIPSE --
+
+## 4.4 Organisations des classes
+
+On s’intéresse ici à l’organisation des classes. On pourra par exemple :
+• étudier la hiérarchie des classes. La hiérarchie est-elle plutôt plate (peu de niveaux
+de hiérarchie) ou à l’inverse profonde ? On pourra par exemple s’appuyer sur la
+profondeur de l’arbre d’héritage (DIT), le nombre d’enfants par classes (min, max
+ou moyenne) (NOC )
+• étudier la stabilité des classes en général ou de quelques unes en particulier
+. Pour
+cela, on pourra s’appuyer sur la notion de couplage.
+• étudier la cohésion des classes au sein d’un paquetage en particulier
+
+# 5 Analyse approfondie
+
+## 5.1 Tests
+
+- Nous retrouvons 1 103 classes de tests pour 1 483 méthodes de tests ce qui fait une moyenne de 1.3 méthode de test par classe de test ce qui semble au premier abord. D'après sonarQube le pourcentage de code couvert par les tests représentent 0% soit une application non testé. Pourtant ???
+
+Certaines parties entières du code restent-elles non couvertes ?
+
+- La principalité des tests sont unitaires qui permettent d'isoler un comportement.
+• étudier le type de tests. S’agit-il de tests unitaires, fonctionnels. . . ?
+- Tout les tests passent et cinq sont skipped. 

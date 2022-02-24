@@ -28,8 +28,7 @@ import org.junit.internal.Throwables;
  */
 public abstract class BaseTestRunner implements TestListener {
     public static final String SUITE_METHODNAME = "suite";
-
-    private static Properties fPreferences;
+public static Properties fPreferences;
     static int fgMaxMessageLength = 500;
     static boolean fgFilterStack = true;
     boolean fLoading = true;

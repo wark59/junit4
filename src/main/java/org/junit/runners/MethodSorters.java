@@ -29,8 +29,6 @@ public enum MethodSorters {
      */
     DEFAULT(MethodSorter.DEFAULT);
 
-    private final Comparator<Method> comparator;
-
     private MethodSorters(Comparator<Method> comparator) {
         this.comparator = comparator;
     }

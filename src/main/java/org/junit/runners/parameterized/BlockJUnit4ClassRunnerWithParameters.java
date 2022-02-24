@@ -22,7 +22,7 @@ import org.junit.runners.model.Statement;
  */
 public class BlockJUnit4ClassRunnerWithParameters extends
         BlockJUnit4ClassRunner {
-    private enum InjectionType {
+    private enum InjectionType() {
         CONSTRUCTOR, FIELD
     }
 

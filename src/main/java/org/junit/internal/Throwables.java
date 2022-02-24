@@ -182,7 +182,7 @@ public final class Throwables {
         };
     }
 
-    private enum State {
+    private enum State() {
         PROCESSING_OTHER_CODE {
             @Override public State processLine(String methodName) {
                 if (isTestFrameworkMethod(methodName)) {
